@@ -35,6 +35,10 @@ body{
     padding: 0;
    
 }
+.contenedor-pagina{
+  position: absolute;
+  width: 100%;
+}
 
 nav{
   position: absolute;
@@ -93,26 +97,29 @@ a{
 .nuestras-raquetas{
   width: 100%;
   display: flex;
+
 }
 .compo-contenedor{
   display: flex;
-  overflow: hidden;
+  overflow: scroll;
   align-items: center;
+  position: static;
 
 }
 .nuestras-raquetas-imagen-contenedor{
+  overflow-wrap: break-word;
   height: 468px;
   background-image: url('./img/ball-color-court-1405355.png');
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: left;
+  background-size: contain;
   min-width: 530px;
-
+  max-width: 540px;
   
 }
 .nuestras-raquetas-contenido{
   color: white;
-  margin-left: 200px;
+  padding-left: 200px;
 }
 .nuestras-raquetas-texto{
   font-size: 18px;
@@ -131,6 +138,7 @@ a{
   color: #787878;
   padding-top: 60px;
   width: 80% ;
+  padding-bottom: 67px;
 }
 
 .contenedor-historia{
@@ -267,8 +275,26 @@ h2.raquetas-titulo{
     padding-left: 51px;
   }
   .boton-historia{
-    margin-top: 4em;
+    margin-top: 2em;
     margin-bottom: 5em;
+  }
+  .raquetas-texto{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .inicioFoo{
+    display: flex;
+    flex-direction: column;
+  }
+  .Fill-222{
+    position: relative;
+  }
+  ul.opciones-idiomas{
+    margin-top: -25px;
+    margin-right: 45px;
+  }
+  .footer-social-media{
+    padding-top: 48px;
   }
 }
 
@@ -282,7 +308,7 @@ h2.raquetas-titulo{
 
 }
 
-.header ul {
+.menu {
   margin: 0;
   list-style: none;
   overflow: hidden;
@@ -298,7 +324,7 @@ h2.raquetas-titulo{
 
 .header li a:hover,
 .header .menu-btn:hover {
-  border-bottom: none;
+ 
 
 }
 
@@ -318,8 +344,11 @@ h2.raquetas-titulo{
   transition: max-height .2s ease-out;
   float: left;
   padding-left: 14vw;
+  background-color: transparent;
 }
-
+.menu>ul{
+  float: left;
+}
 /* menu icon */
 
  .menu-icon {
@@ -328,11 +357,19 @@ h2.raquetas-titulo{
   padding: 28px 20px;
   position: relative;
   user-select: none;
+  z-index: 900;
 }
 
-.opciones-idiomas{
+ul.opciones-idiomas{
   right: 0;
   position: absolute;
+  z-index: 100;
+  list-style: none;
+  display: flex;
+
+}
+ul.opciones-idiomas>li>a{
+  
 }
 
 .header .menu-icon .navicon {
@@ -370,11 +407,11 @@ h2.raquetas-titulo{
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  max-height: 300px;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
-  background: transparent;
+  background-color: #282e47;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon:before {
@@ -399,12 +436,14 @@ h2.raquetas-titulo{
  
   .menu {
     clear: none;
-    float: right;
     max-height: none;
+    
+    
   }
   .header .menu-icon {
     display: none;
   }
+
 }
 
 .action-athlete-ball-342361 {
@@ -421,10 +460,11 @@ h2.raquetas-titulo{
   height: 37px;
   padding: 64px 37px 31px 78px;
   font-family:"Helvetica Neue", sans-serif;
-  display:block;
+  display:flex;
   font-size: 13px;
   font-weight: normal;
   letter-spacing: 1.14px;
+
 }
 .inicioFoo > a{
 
