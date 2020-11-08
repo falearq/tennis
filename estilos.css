@@ -1,0 +1,510 @@
+
+@font-face {font-family: "Helvetica Neue"; src: url("//db.onlinewebfonts.com/t/0d49fc455f4a8951a42daf952412a713.eot"); src: url("//db.onlinewebfonts.com/t/0d49fc455f4a8951a42daf952412a713.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0d49fc455f4a8951a42daf952412a713.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0d49fc455f4a8951a42daf952412a713.woff") format("woff"), url("//db.onlinewebfonts.com/t/0d49fc455f4a8951a42daf952412a713.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0d49fc455f4a8951a42daf952412a713.svg#Helvetica Neue") format("svg"); }
+
+/*CSS RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  vertical-align: baseline;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  
+}
+body{
+    margin: 0;
+    padding: 0;
+   
+}
+
+nav{
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+}
+
+nav>ul>li{
+  font-size: 16px;
+  letter-spacing: 1.4px;
+  font-weight: lighter;
+}
+.logo{
+  position: absolute;
+  top: 25px;
+  left: 36px;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+.imagen-hero{
+  position: relative;
+  height: 785px;
+  display: block;
+  background-image: url('./img/group.png');
+  background-size: cover;
+}
+.texto-hero{
+ 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-78%, -50%);
+  color: white;
+ line-height: 68px;
+}
+.linea-vertical{
+  border-left: thick solid white;
+  height: inherit;
+  margin-left: 9%;
+ 
+}
+.titulo-hero{
+  font-size: 53px;
+  font-weight: lighter;
+}
+.amarillo{
+  color: #cbe346;
+  font-weight: bold;
+}
+.pie-de-pag{
+  background-color: #cbe346;
+  height: 203px;
+}
+.nuestras-raquetas{
+  width: 100%;
+  display: flex;
+}
+.compo-contenedor{
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+
+}
+.nuestras-raquetas-imagen-contenedor{
+  height: 468px;
+  background-image: url('./img/ball-color-court-1405355.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-width: 530px;
+
+  
+}
+.nuestras-raquetas-contenido{
+  color: white;
+  margin-left: 200px;
+}
+.nuestras-raquetas-texto{
+  font-size: 18px;
+  line-height: 1.67;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 0.51px;
+  padding-top: 20px;
+  width: 80%;
+}
+.raquetas-texto{
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.51px;
+  color: #787878;
+  padding-top: 60px;
+  width: 80% ;
+}
+
+.contenedor-historia{
+  background-color: #f3f4f8; 
+  display: grid; 
+  max-width: 1280px;
+  height: 392px; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-gap: 1.5em;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.boton-primario{
+  width: 234px; 
+  height: 53px; 
+  border-radius: 26px; 
+  background: transparent; 
+  border-style: solid;
+  font-size: 13px; 
+  text-transform: uppercase;
+  font-weight: 500; 
+  letter-spacing: 1px;
+  line-height: 2.15;
+  
+}
+.boton-historia{
+  border-color: #282e47;
+  word-spacing: 30px; 
+  color: #282e47;
+}
+.boton-acerca-de{
+  border-color: white;
+  color: white;
+  margin-top: 1em;
+}
+.etiqueta-tennis{
+  padding-top: 108px; 
+  text-align: right;
+ }
+.raquetas-accesorios-pelotas-contenedor{
+  display: flex;
+  flex-direction: row;
+  height:420px;
+  width: 100%;
+  background-color: #f3f4f8;
+  padding-top: 80px;
+
+}
+.raquetas-accesorios-pelotas-col1{
+  width: 30%;
+  text-align: right;
+  text-transform: uppercase;
+  color: #cbe346;
+  font-size: 30px;
+  letter-spacing: 1.87px;
+}
+.raquetas-accesorios-pelotas-col2{
+  
+  padding-left: 51px;
+  width: 40%;
+  box-sizing: content-box;
+  overflow-wrap: break-word;
+  
+}
+.raquetas-accesorios-pelotas-col3{
+  padding-top: 200px;
+}
+h2.raquetas-titulo{
+  font-size: 50px;
+  font-weight: lighter;
+}
+.nuestras-raquetas-titulo{
+  font-size: 50px;
+  font-weight: lighter;
+  padding-top: 40px;
+  line-height: 64px;
+}
+.bold{
+  font-weight: bold;
+}
+.slider{
+  background-image: url('./img/sliderdots.png');
+  background-repeat: no-repeat;
+  height: 100px;
+  background-position: left;
+}
+.controles-contenedor{
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.izq{
+  background-image: url('./img/leftarrow.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  height: 54px;
+  width: 54px;
+}
+.der{
+  background-image: url('./img/rgtarrw.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  height: 64px;
+  width: 70px;
+  margin-left: 19px;
+}
+
+@media screen and (max-width: 785px){
+
+  .texto-hero{
+ 
+    position: absolute;
+    transform: translate(-50%, -50%);
+  
+  
+  }
+  .raquetas-accesorios-pelotas-contenedor{
+    flex-direction: column;
+    height: auto;
+  }
+  .raquetas-accesorios-pelotas-col1{
+    width: 70%;
+    text-align: left;
+    margin-left: 51px;
+  }
+  .raquetas-accesorios-pelotas-col2{
+    width: 70%;
+    padding-top: 0;
+  }
+  .raquetas-accesorios-pelotas-col3{
+    padding-top: 0;
+    padding-left: 51px;
+  }
+  .boton-historia{
+    margin-top: 4em;
+    margin-bottom: 5em;
+  }
+}
+
+/*NAV*/
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  width: 100%;
+  
+  z-index: 3;
+
+}
+
+.header ul {
+  margin: 0;
+  list-style: none;
+  overflow: hidden;
+  float: left;
+  
+}
+
+.header li a {
+  display: block;
+  margin-top: 44px;
+  padding-right: 40px;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  border-bottom: none;
+
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+ .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+  float: left;
+  padding-left: 14vw;
+}
+
+/* menu icon */
+
+ .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.opciones-idiomas{
+  right: 0;
+  position: absolute;
+}
+
+.header .menu-icon .navicon {
+  background: #fff;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+ 
+  .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+.action-athlete-ball-342361 {
+  
+  width: 100%;
+  display: flex;
+}
+.footer{
+  height: 203px;
+  background-color: #cbe346;
+}
+.inicioFoo{
+  width: 900px;
+  height: 37px;
+  padding: 64px 37px 31px 78px;
+  font-family:"Helvetica Neue", sans-serif;
+  display:block;
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: 1.14px;
+}
+.inicioFoo > a{
+
+    color:#2b3049;;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight:bold;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    margin-right: 25px;
+}
+.Group-23 {
+  width: 31px;
+  height: 31px;
+ top: -58px;
+ right: -78px;
+  object-fit: contain;
+}
+.Group-24 {
+  width: 31px;
+  height: 31px;
+  top: -58px;
+ right: -90px;
+  object-fit: contain;
+}
+.Group-25 {
+  width: 31px;
+  height: 31px;
+  top: -58px;
+ right: -102px;
+  object-fit: contain;
+}
+.Group-22 {
+  width: 31px;
+  height: 31px;
+  top: -58px;
+ right: -114px;
+  object-fit: contain;
+}
+.Group-26 {
+  width: 31px;
+  height: 31px;
+  top: -58px;
+ right: -126px;
+  object-fit: contain;
+}
+.Fill-222 {
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  right: 63px;
+  object-fit: contain;
+  align-self: center;
+  z-index: 1000000000;
+}
+.compo2{
+
+height: 344px;
+padding-left: 2em;
+object-fit: contain;
+}
+.compo1{
+
+height: 344px;
+right: -80px;
+object-fit: contain;
+}
+.compo3{
+height: 344px;
+right: -90px;
+object-fit: contain;
+}
+.compo{
+  padding-right: 2em;
+
+}
+.ball-color-court-1405355 {
+width: 350px;
+height: 468px;
+object-fit: contain;
+}
+.footer-social-media{
+  padding-left: 78px;
+}
