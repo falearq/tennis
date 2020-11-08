@@ -443,7 +443,14 @@ ul.opciones-idiomas>li>a{
   .header .menu-icon {
     display: none;
   }
-
+  .activo:before{
+    content: "";
+    position: absolute;
+    width: 2%;
+    height: 1px;
+    bottom: -20px;
+    border-bottom: 1px solid white;
+   }
 }
 
 .action-athlete-ball-342361 {
